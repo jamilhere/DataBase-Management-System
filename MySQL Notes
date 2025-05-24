@@ -1,1 +1,8 @@
 
+USE Programminghero;
+CREATE TABLE student(
+Roll CHAR(4) PRIMARY KEY,
+Name VARCHAR(50),
+Marks DOUBLE
+);
+DROP table student;
