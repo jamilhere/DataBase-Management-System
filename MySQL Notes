@@ -1,8 +1,25 @@
-
 USE Programminghero;
 CREATE TABLE student(
 Roll CHAR(4) PRIMARY KEY,
 Name VARCHAR(50),
 Marks DOUBLE
 );
-DROP table student;
+
+#INSERT
+INSERT INTO Student
+(Roll,Name,Marks) VALUES(1,'jamil',85);
+
+INSERT INTO Student
+(Roll,Name) VALUES(2,'kamil');
+
+#UPDATE
+SET SQL_SAFE_UPDATES = 0;
+UPDATE Student
+SET Name = 'jubayer'
+WHERE Roll = 1;
+
+SET SQL_SAFE_UPDATES = 1;
+
+#DELETE
+DELETE FROM Student
+WHERE Roll = 1;
